@@ -1,0 +1,21 @@
+import random
+import time
+
+quotes = [
+    "Success is built one step at a time.",
+    "Every expert was once a beginner.",
+    "Code. Learn. Repeat.",
+    "Small progress is still progress.",
+    "Dream big, start small."
+]
+
+print("✨ Random Motivation Generator ✨")
+time.sleep(1)
+
+while True:
+    print("\n" + random.choice(quotes))
+    choice = input("\nAnother quote? (y/n): ").lower()
+
+    if choice != "y":
+        print("\nHave a productive day! 🚀")
+        break
